@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/estrelaspin.jpg);
+    background-image: url(../images/estrelaspin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15px;
