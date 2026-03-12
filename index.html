@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        />
+        <link rel="stylesheet" href="assets/styles.css" />
+        <script src="assets/scripts.js" defer></script>
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <form method="POST" class="validator">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div class="input">
+                            <label>Username</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="username"
+                                placeholder="Enter your name"
+                                autocomplete="off"
+                                data-rules="required|min=5|max=5"
+                            />
+                        </div>
+                        <div class="input">
+                            <label>Password</label>
+                            <input
+                                type="password"
+                                id="keypass"
+                                name="senha"
+                                placeholder="Enter your password"
+                                maxlength="5"
+                                autocomplete="off"
+                                data-rules="required|min=8"
+                            />
+                            <i
+                                class="bi bi-eye-fill"
+                                id="icon"
+                                onclick="senha()"
+                            ></i>
+                        </div>
+                        <input
+                            type="submit"
+                            onclick="
+                                logar();
+                                return false;
+                            "
+                            class="botao"
+                            name="enviar"
+                            value="Send"
+                        />
+                    </fieldset>
+                </form>
+            </div>
+            <h3>Don't have an account? <a href="#">Sign up!</a></h3>
+        </div>
+    </body>
+</html>
